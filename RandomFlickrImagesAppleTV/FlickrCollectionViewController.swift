@@ -35,7 +35,7 @@ class FlickrCollectionViewController: UIViewController, UICollectionViewDelegate
     
     func setFirstCollectionView() {
         
-        let searchText = "NewYork, NY"
+        let searchText = "Yosemite National Park, California"
         print("Random Text: ", searchText)
         methodArguments["text"] = searchText
         
@@ -52,7 +52,7 @@ class FlickrCollectionViewController: UIViewController, UICollectionViewDelegate
     }
     
     func setSecondCollectionView() {
-        let searchText = "Hyderabad, India"
+        let searchText = "NewYork, NY"
         print("Random Text: ", searchText)
         methodArguments["text"] = searchText
         
@@ -69,7 +69,7 @@ class FlickrCollectionViewController: UIViewController, UICollectionViewDelegate
     }
     
     
-    // UICollectionViewDelegate methods
+    // UICollectionViewDataSource methods
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         let tag = collectionView.tag
@@ -124,12 +124,9 @@ class FlickrCollectionViewController: UIViewController, UICollectionViewDelegate
     
     // Mark: UICollectionViewDelegate
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        print("Did Select indexPath: ", indexPath.row)
     }
     
     func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
-        
-        print("In will Display Cell")
         cell.alpha = 0.0
         
         UIView.animateWithDuration(1.0) { () -> Void in
@@ -146,7 +143,6 @@ class FlickrCollectionViewController: UIViewController, UICollectionViewDelegate
     }
     
 }
-
 
 
 
