@@ -109,12 +109,10 @@
 			children = (
 				32B3B18A1C8C729000E3D250 /* AppDelegate.swift */,
 				32B3B18C1C8C729000E3D250 /* ViewController.swift */,
-				32B3B1B71C8C759600E3D250 /* FlickrConstants.swift */,
-				32B3B1B91C8C75E000E3D250 /* FlickrConvenience.swift */,
-				32B3B1B51C8C756000E3D250 /* FlickrClient.swift */,
-				32B3B1BD1C8C772200E3D250 /* FlickrCollectionViewController.swift */,
+				32B3B1C91C8CE49100E3D250 /* ViewControllers */,
 				32B3B1BF1C8C774F00E3D250 /* FlickrCollectionViewCell.swift */,
-				32B3B1BB1C8C762500E3D250 /* PhotoData.swift */,
+				32B3B1C81C8CE47900E3D250 /* Model */,
+				32B3B1C71C8CE45000E3D250 /* API */,
 				32B3B18E1C8C729000E3D250 /* Main.storyboard */,
 				32B3B1911C8C729000E3D250 /* Assets.xcassets */,
 				32B3B1931C8C729000E3D250 /* Info.plist */,
@@ -138,6 +136,32 @@
 				32B3B1A91C8C729000E3D250 /* Info.plist */,
 			);
 			path = RandomFlickrImagesAppleTVUITests;
+			sourceTree = "<group>";
+		};
+		32B3B1C71C8CE45000E3D250 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				32B3B1B51C8C756000E3D250 /* FlickrClient.swift */,
+				32B3B1B91C8C75E000E3D250 /* FlickrConvenience.swift */,
+				32B3B1B71C8C759600E3D250 /* FlickrConstants.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		32B3B1C81C8CE47900E3D250 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				32B3B1BB1C8C762500E3D250 /* PhotoData.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		32B3B1C91C8CE49100E3D250 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				32B3B1BD1C8C772200E3D250 /* FlickrCollectionViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

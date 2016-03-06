@@ -122,11 +122,19 @@ class FlickrCollectionViewController: UIViewController, UICollectionViewDelegate
         }
     }
     
+    // Mark: UICollectionViewDelegate
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        print("Did Select indexPath: ", indexPath.row)
+    }
+    
+    func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
         
-        //        let detailController = storyboard!.instantiateViewControllerWithIdentifier("MemeDetailViewController") as! MemeDetailViewController
-        //        detailController.selectedIndex = indexPath.row
-        //        navigationController!.pushViewController(detailController, animated: true)
+        print("In will Display Cell")
+        cell.alpha = 0.0
+        
+        UIView.animateWithDuration(1.0) { () -> Void in
+        cell.alpha = 1.0
+        }
     }
     
     // Mark: Helper methods.
@@ -138,4 +146,7 @@ class FlickrCollectionViewController: UIViewController, UICollectionViewDelegate
     }
     
 }
+
+
+
 
