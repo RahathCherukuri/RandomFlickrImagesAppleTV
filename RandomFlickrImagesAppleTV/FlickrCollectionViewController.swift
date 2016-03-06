@@ -69,6 +69,8 @@ class FlickrCollectionViewController: UIViewController, UICollectionViewDelegate
     }
     
     
+    // UICollectionViewDelegate methods
+    
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         let tag = collectionView.tag
         if tag == 0 {
@@ -126,6 +128,8 @@ class FlickrCollectionViewController: UIViewController, UICollectionViewDelegate
         //        detailController.selectedIndex = indexPath.row
         //        navigationController!.pushViewController(detailController, animated: true)
     }
+    
+    // Mark: Helper methods.
     
     func getRandomPhotoIndex()-> String {
         let cityStates = ["Hyderabad, India", "Norfolk, VA", "Syracuse, NY", "Banglore, India", "Chennai, India", "Rochester, NY", "NewYork, NY"]
